@@ -20,6 +20,10 @@
 #rotating-menu > .container.show-nav {
   transform: rotate(-20deg);
 }
+#rotating-menu > .container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
 #rotating-menu .circle-container {
   position: fixed;
   top: -100px;
@@ -33,6 +37,9 @@
   position: relative;
   transition: transform 0.5s linear;
 }
+#rotating-menu > .container.show-nav .circle {
+  transform: rotate(-70deg);
+}
 #rotating-menu .circle-container > .circle > button {
   position: absolute;
   top: 50%;
@@ -42,6 +49,7 @@
   border: 0;
   font-size: 26px;
   color: #fff;
+  cursor: pointer;
 }
 #rotating-menu .circle-container > .circle > button:focus {
   outline: none;
