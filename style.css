@@ -54,6 +54,19 @@
   transform: rotate(90deg);
   transform-origin: top left;
 }
-#rotating-menu .content > img {
-  max-width: 100%;
+#rotating-menu .content {
+  width: 1000px;
+  margin: 50px auto;
+}
+#rotating-menu .content h1 {
+  margin: 0;
+}
+#rotating-menu .content small {
+  font-style: italic;
+  color: #555;
+}
+
+#rotating-menu .content p {
+  color: #333;
+  line-height: 1.5;
 }
